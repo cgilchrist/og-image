@@ -44,9 +44,11 @@ function getCss(theme: string, fontSize: string) {
       }
 
     body {
-        background: ${background};
+        /*background: ${background};
         background-image: radial-gradient(circle at 25px 25px, ${radial} 2%, transparent 0%), radial-gradient(circle at 75px 75px, ${radial} 2%, transparent 0%);
-        background-size: 100px 100px;
+        background-size: 100px 100px;*/
+        background-image: linear-gradient(135deg, #6d327c, #485da6 25%, #00a1ba 50%, #01b18e 75%, #32b37b);
+
         height: 100vh;
         display: flex;
         text-align: center;
