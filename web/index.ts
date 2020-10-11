@@ -144,24 +144,24 @@ const markdownOptions: DropdownOption[] = [
 const imageLightOptions: DropdownOption[] = [
 
 
-    { text: 'Vercel', value: 'https://uploads-ssl.webflow.com/5f727c74a86d200727978415/5f80f219670b4674f9b79560_goodbadjoeks-og-image-blank.png' },
-    { text: 'Next.js', value: 'https://uploads-ssl.webflow.com/5f727c74a86d200727978415/5f80f219670b4674f9b79560_goodbadjoeks-og-image-blank.png' },
-    { text: 'Hyper', value: 'https://uploads-ssl.webflow.com/5f727c74a86d200727978415/5f80f219670b4674f9b79560_goodbadjoeks-og-image-blank.png' },
+    // { text: 'Vercel', value: 'https://uploads-ssl.webflow.com/5f727c74a86d200727978415/5f80f219670b4674f9b79560_goodbadjoeks-og-image-blank.png' },
+    // { text: 'Next.js', value: 'https://uploads-ssl.webflow.com/5f727c74a86d200727978415/5f80f219670b4674f9b79560_goodbadjoeks-og-image-blank.png' },
+    // { text: 'Hyper', value: 'https://uploads-ssl.webflow.com/5f727c74a86d200727978415/5f80f219670b4674f9b79560_goodbadjoeks-og-image-blank.png' },
 
-    // { text: 'Vercel', value: 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-black.svg' },
-    // { text: 'Next.js', value: 'https://assets.vercel.com/image/upload/front/assets/design/nextjs-black-logo.svg' },
-    // { text: 'Hyper', value: 'https://assets.vercel.com/image/upload/front/assets/design/hyper-color-logo.svg' },
+    { text: 'Vercel', value: 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-black.svg' },
+    { text: 'Next.js', value: 'https://assets.vercel.com/image/upload/front/assets/design/nextjs-black-logo.svg' },
+    { text: 'Hyper', value: 'https://assets.vercel.com/image/upload/front/assets/design/hyper-color-logo.svg' },
 ];
 
 const imageDarkOptions: DropdownOption[] = [
 
-    { text: 'Vercel', value: 'https://uploads-ssl.webflow.com/5f727c74a86d200727978415/5f80f219670b4674f9b79560_goodbadjoeks-og-image-blank.png' },
-    { text: 'Next.js', value: 'https://uploads-ssl.webflow.com/5f727c74a86d200727978415/5f80f219670b4674f9b79560_goodbadjoeks-og-image-blank.png' },
-    { text: 'Hyper', value: 'https://uploads-ssl.webflow.com/5f727c74a86d200727978415/5f80f219670b4674f9b79560_goodbadjoeks-og-image-blank.png' },
+    // { text: 'Vercel', value: 'https://uploads-ssl.webflow.com/5f727c74a86d200727978415/5f80f219670b4674f9b79560_goodbadjoeks-og-image-blank.png' },
+    // { text: 'Next.js', value: 'https://uploads-ssl.webflow.com/5f727c74a86d200727978415/5f80f219670b4674f9b79560_goodbadjoeks-og-image-blank.png' },
+    // { text: 'Hyper', value: 'https://uploads-ssl.webflow.com/5f727c74a86d200727978415/5f80f219670b4674f9b79560_goodbadjoeks-og-image-blank.png' },
 
-    // { text: 'Vercel', value: 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-black.svg' },
-    // { text: 'Next.js', value: 'https://assets.vercel.com/image/upload/front/assets/design/nextjs-black-logo.svg' },
-    // { text: 'Hyper', value: 'https://assets.vercel.com/image/upload/front/assets/design/hyper-color-logo.svg' },
+    { text: 'Vercel', value: 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-black.svg' },
+    { text: 'Next.js', value: 'https://assets.vercel.com/image/upload/front/assets/design/nextjs-black-logo.svg' },
+    { text: 'Hyper', value: 'https://assets.vercel.com/image/upload/front/assets/design/hyper-color-logo.svg' },
 ];
 
 const widthOptions = [
