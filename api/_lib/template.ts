@@ -44,7 +44,11 @@ function getCss(theme: string, fontSize: string) {
       }
 
     body {
-        background-image: linear-gradient(135deg, #6d327c, #485da6 25%, #00a1ba 50%, #01b18e 75%, #32b37b);
+        background: ${background};
+        background-image: radial-gradient(circle at 25px 25px, ${radial} 2%, transparent 0%), radial-gradient(circle at 75px 75px, ${radial} 2%, transparent 0%);
+          background-image: linear-gradient(135deg, #6d327c, #485da6 25%, #00a1ba 50%, #01b18e 75%, #32b37b);
+
+        background-size: 100px 100px;
         height: 100vh;
         display: flex;
         text-align: center;
@@ -96,7 +100,7 @@ function getCss(theme: string, fontSize: string) {
         font-family: 'Inter', sans-serif;
         font-size: ${sanitizeHtml(fontSize)};
         font-style: normal;
-        color: #fff;
+        color: ${foreground};
         line-height: 1.8;
     }`;
 }
@@ -114,7 +118,7 @@ export function getHtml(parsedReq: ParsedRequest) {
     <body>
         <div>
             <div class="spacer">
-            <div class="logo-wrapper" style="display:none;">
+            <div class="logo-wrapper">
                 ${images.map((img, i) =>
                     getPlusSign(i) + getImage(img, widths[i], heights[i])
                 ).join('')}
