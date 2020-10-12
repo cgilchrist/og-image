@@ -125,10 +125,6 @@ const themeOptions: DropdownOption[] = [
     { text: 'Dark', value: 'dark' },
 ];
 
-const fileTypeOptions: DropdownOption[] = [
-    { text: 'PNG', value: 'png' },
-    { text: 'JPEG', value: 'jpeg' },
-];
 
 const fontSizeOptions: DropdownOption[] = Array
     .from({ length: 10 })
@@ -211,7 +207,6 @@ const App = (_: any, state: AppState, setState: SetState) => {
         setState({ ...newState, loading: true });
     };
     const {
-        fileType = 'png',
         fontSize = '100px',
         theme = 'light',
         md = true,
@@ -228,7 +223,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
     const mdValue = md ? '1' : '0';
     const imageOptions = theme === 'light' ? imageLightOptions : imageDarkOptions;
     const url = new URL(window.location.origin);
-    url.pathname = `${encodeURIComponent(text)}.${fileType}`;
+    url.pathname = `${encodeURIComponent(text)}.png`;
     url.searchParams.append('theme', theme);
     url.searchParams.append('md', mdValue);
     url.searchParams.append('fontSize', fontSize);
@@ -258,14 +253,6 @@ const App = (_: any, state: AppState, setState: SetState) => {
                             clone[0] = options[selectedImageIndex].value;
                             setLoadingState({ theme: val, images: clone });
                         }
-                    })
-                }),
-                H(Field, {
-                    label: 'File Type',
-                    input: H(Dropdown, {
-                        options: fileTypeOptions,
-                        value: fileType,
-                        onchange: (val: FileType) => setLoadingState({ fileType: val })
                     })
                 }),
                 H(Field, {
