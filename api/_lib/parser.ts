@@ -52,11 +52,8 @@ function getArray(stringOrArray: string[] | string | undefined): string[] {
 
 function getDefaultImages(images: string[], theme: Theme): string[] {
     const defaultImage = theme === 'light'
-        // ? 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-black.svg'
-        // : 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-white.svg';
-        ? 'https://uploads-ssl.webflow.com/5f727c74a86d200727978415/5f80f219670b4674f9b79560_goodbadjoeks-og-image-blank.pngg'
-        : 'https://uploads-ssl.webflow.com/5f727c74a86d200727978415/5f80f219670b4674f9b79560_goodbadjoeks-og-image-blank.png';
-
+        ? 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-black.svg'
+        : 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-white.svg';
 
     if (!images || !images[0]) {
         return [defaultImage];
