@@ -1,4 +1,4 @@
-import { ParsedRequest, Theme, FileType } from '../api/_lib/types';
+import { ParsedRequest, Theme } from '../api/_lib/types';
 const { H, R, copee } = (window as any);
 let timeout = -1;
 
